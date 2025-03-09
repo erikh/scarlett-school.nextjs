@@ -9,10 +9,8 @@ export default function About() {
     "utf8"
   );
   return (
-    <Text size="lg">
-      <div className="markdown">
-        <ReactMarkdown remarkPlugins={[[remarkGfm]]}>{contents}</ReactMarkdown>
-      </div>
-    </Text>
+    <div className="markdown">
+      <ReactMarkdown remarkPlugins={[[remarkGfm]]}>{contents}</ReactMarkdown>
+    </div>
   );
 }

@@ -7,77 +7,79 @@ import Footer from "../footer";
 export default function NavBar({ children }) {
   const theme = useMantineTheme();
   return (
-    <AppShell header={{ height: 75 }} padding="md">
-      <AppShellHeader
-        style={{ height: 75, backgroundColor: theme.colors.red[5] }}
-        className="header"
-      >
-        <div
-          style={{
-            float: "left",
-            width: "200px",
-          }}
+    <div>
+      <AppShell header={{ height: 75 }} padding="md">
+        <AppShellHeader
+          style={{ height: 75, backgroundColor: theme.colors.red[5] }}
+          className="header"
         >
-          <Button
+          <div
             style={{
-              fontSize: 20,
-              backgroundColor: theme.colors.red[5],
-              height: 74,
-              width: 200,
-              borderRadius: 0,
+              float: "left",
+              width: "200px",
             }}
-            component={Link}
-            href="/"
           >
-            Scarlett School
-          </Button>
-        </div>
-        <div style={{ float: "right", width: "600px" }}>
-          <Button
-            style={{
-              fontSize: 20,
-              backgroundColor: theme.colors.red[5],
-              height: 74,
-              width: 200,
-              borderRadius: 0,
-            }}
-            component={Link}
-            href="/lessons"
-          >
-            Lessons
-          </Button>
-          <Button
-            style={{
-              fontSize: 20,
-              backgroundColor: theme.colors.red[5],
-              height: 74,
-              width: 200,
-              borderRadius: 0,
-            }}
-            component={Link}
-            href="/about"
-          >
-            About
-          </Button>
-          <Button
-            style={{
-              fontSize: 20,
-              backgroundColor: theme.colors.red[5],
-              height: 74,
-              width: 200,
-              borderRadius: 0,
-            }}
-            component={Link}
-            href="/contact"
-          >
-            Contact
-          </Button>
-        </div>
-      </AppShellHeader>
-      <AppShellMain>
-        <div style={{ height: "100%" }}>{children}</div>
-        <Footer />
-      </AppShellMain>
-    </AppShell>
+            <Button
+              style={{
+                fontSize: 20,
+                backgroundColor: theme.colors.red[5],
+                height: 74,
+                width: 200,
+                borderRadius: 0,
+              }}
+              component={Link}
+              href="/"
+            >
+              Scarlett School
+            </Button>
+          </div>
+          <div style={{ float: "right", width: "600px" }}>
+            <Button
+              style={{
+                fontSize: 20,
+                backgroundColor: theme.colors.red[5],
+                height: 74,
+                width: 200,
+                borderRadius: 0,
+              }}
+              component={Link}
+              href="/lessons"
+            >
+              Lessons
+            </Button>
+            <Button
+              style={{
+                fontSize: 20,
+                backgroundColor: theme.colors.red[5],
+                height: 74,
+                width: 200,
+                borderRadius: 0,
+              }}
+              component={Link}
+              href="/about"
+            >
+              About
+            </Button>
+            <Button
+              style={{
+                fontSize: 20,
+                backgroundColor: theme.colors.red[5],
+                height: 74,
+                width: 200,
+                borderRadius: 0,
+              }}
+              component={Link}
+              href="/contact"
+            >
+              Contact
+            </Button>
+          </div>
+        </AppShellHeader>
+        <AppShellMain>
+          <div style={{ height: "100%" }}>{children}</div>
+        </AppShellMain>
+      </AppShell>
+      <Footer />
+    </div>
   );
 }
