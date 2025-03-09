@@ -13,7 +13,7 @@ export default function Footer() {
         color: theme.colors.gray[5],
       }}
     >
-      <center>&copy; 2023,2024,2025 Erik Hollensbe. All Rights Reserved</center>
+      <center>&copy; 2023-2025 Erik Hollensbe. All Rights Reserved</center>
     </div>
   );
 }
