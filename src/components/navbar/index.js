@@ -13,66 +13,62 @@ export default function NavBar({ children }) {
           style={{ height: 75, backgroundColor: theme.colors.red[5] }}
           className="header"
         >
-          <div
-            style={{
-              float: "left",
-              width: "200px",
-            }}
-          >
-            <Button
-              style={{
-                fontSize: 20,
-                backgroundColor: theme.colors.red[5],
-                height: 74,
-                width: 200,
-                borderRadius: 0,
-              }}
-              component={Link}
-              href="/"
-            >
-              Scarlett School
-            </Button>
-          </div>
-          <div style={{ float: "right", width: "600px" }}>
-            <Button
-              style={{
-                fontSize: 20,
-                backgroundColor: theme.colors.red[5],
-                height: 74,
-                width: 200,
-                borderRadius: 0,
-              }}
-              component={Link}
-              href="/lessons"
-            >
-              Lessons
-            </Button>
-            <Button
-              style={{
-                fontSize: 20,
-                backgroundColor: theme.colors.red[5],
-                height: 74,
-                width: 200,
-                borderRadius: 0,
-              }}
-              component={Link}
-              href="/about"
-            >
-              About
-            </Button>
-            <Button
-              style={{
-                fontSize: 20,
-                backgroundColor: theme.colors.red[5],
-                height: 74,
-                width: 200,
-                borderRadius: 0,
-              }}
-              component={Link}
-              href="/contact"
-            >
-              Contact
-            </Button>
+          <div style={{ marginLeft: "auto", marginRight: "auto" }}>
+            <span style={{ float: "left" }}>
+              <Button
+                style={{
+                  fontSize: "1.5em",
+                  backgroundColor: theme.colors.red[5],
+                  height: 74,
+                  borderRadius: 0,
+                }}
+                component={Link}
+                href="/"
+              >
+                Scarlett School
+              </Button>
+            </span>
+            <span style={{ float: "right" }}>
+              <Button
+                style={{
+                  fontSize: "1.5em",
+                  backgroundColor: theme.colors.red[5],
+                  height: 74,
+                  width: 200,
+                  borderRadius: 0,
+                }}
+                component={Link}
+                href="/lessons"
+              >
+                Lessons
+              </Button>
+              <Button
+                style={{
+                  fontSize: "1.5em",
+                  backgroundColor: theme.colors.red[5],
+                  height: 74,
+                  width: 200,
+                  borderRadius: 0,
+                }}
+                component={Link}
+                href="/about"
+              >
+                About
+              </Button>
+              <Button
+                style={{
+                  fontSize: "1.5em",
+                  backgroundColor: theme.colors.red[5],
+                  height: 74,
+                  width: 200,
+                  borderRadius: 0,
+                }}
+                component={Link}
+                href="/contact"
+              >
+                Contact
+              </Button>
+            </span>
           </div>
         </AppShellHeader>
         <AppShellMain>
