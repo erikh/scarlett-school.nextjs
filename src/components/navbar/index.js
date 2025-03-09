@@ -10,6 +10,7 @@ export default function NavBar({ children }) {
     <AppShell header={{ height: 75 }} padding="md">
       <AppShellHeader
         style={{ height: 75, backgroundColor: theme.colors.red[5] }}
+        className="header"
       >
         <div
           style={{

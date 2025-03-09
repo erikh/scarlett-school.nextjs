@@ -33,6 +33,19 @@ p {
   font-size: 1em;
 }
 
+.header a,
+.header a:visited {
+  color: white;
+}
+
+a {
+  color: #aa6666;
+}
+
+a:visited {
+  color: #886666;
+}
+
 ul {
   padding: 1em;
 }
