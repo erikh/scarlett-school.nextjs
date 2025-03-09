@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" {...mantineHtmlProps}>
       <head>
-        <ColorSchemeScript defaultColorScheme="auto" />
+        <ColorSchemeScript defaultColorScheme="light" />
       </head>
       <body className={`${lusitana.className} antialiased`}>
         <MantineProvider defaultColorScheme="auto">

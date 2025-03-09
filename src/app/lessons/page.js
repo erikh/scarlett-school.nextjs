@@ -6,17 +6,17 @@ export default function Lessons() {
     <div>
       <Text size="lg" className="maintext">
         Here are the basic lessons we teach, provided to you for reference. Each
-        lesson is given by an instructor who will help "fill in the blanks" and
-        answer your questions.
+        lesson is given by an instructor who will help &quot;fill in the
+        blanks&quot; and answer your questions.
       </Text>
       <Text size="lg" className="maintext">
-        It is important that you understand that our lessons aren't exhaustive;
-        some of these topics, you can spend a lifetime learning. Instead, we
-        help you get started, but it is <b>your goal</b> to teach yourself
-        beyond that. We strongly suggest 1-2 hours a day where you try to teach
-        yourself new things. If you cannot do this due to time constraints, make
-        it a day or two a week. The important thing is <b>effort</b> and{" "}
-        <b>consistency</b>.
+        It is important that you understand that our lessons aren&apos;t
+        exhaustive; some of these topics, you can spend a lifetime learning.
+        Instead, we help you get started, but it is <b>your goal</b> to teach
+        yourself beyond that. We strongly suggest 1-2 hours a day where you try
+        to teach yourself new things. If you cannot do this due to time
+        constraints, make it a day or two a week. The important thing is{" "}
+        <b>effort</b> and <b>consistency</b>.
       </Text>
       <Text size="xl" className="maintext">
         Lesson Plans:
@@ -30,17 +30,17 @@ export default function Lessons() {
       </Text>
       <ul>
         <li>
-          <Link href="/lessons/general-programming">
+          <Link href="./lessons/general-programming">
             General Programming Education - Start Here!
           </Link>
         </li>
         <li>
-          <Link href="/lessons/unix">
+          <Link href="./lessons/unix">
             Unix Fundamentals with the Linux Operating System
           </Link>
         </li>
         <li>
-          <Link href="/lessons/rdbms">
+          <Link href="./lessons/rdbms">
             RDBMS: Relational Databases &amp; SQL
           </Link>
         </li>

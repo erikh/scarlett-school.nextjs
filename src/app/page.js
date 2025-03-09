@@ -14,7 +14,7 @@ export default function Home() {
         normal jobs, to learn a new skill set that pays a much higher salary.
       </Text>
       <Text size="lg" className="maintext">
-        We feel that our education program, which gives a "splash" of
+        We feel that our education program, which gives a &quot;splash&quot; of
         educational materials and strongly encourages learners to finish the
         education on their own, is more flexible and encouraging than
         traditional education. We also feel that the industry benefits as a

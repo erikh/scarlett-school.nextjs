@@ -1,5 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
 const fs = require("fs");
 
 const lessons = [
@@ -47,7 +49,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function Unix({ params }) {
+export default async function Unix({ params }) {
+  const { id } = await params;
   return (
     <div className="markdown">
       <ReactMarkdown
@@ -57,12 +60,13 @@ export default function Unix({ params }) {
             const match = /language-(\w+)/.exec(className || "");
             return !inline && match ? (
               <SyntaxHighlighter
-                children={String(children).replace(/\n$/, "")}
                 style={solarizedlight}
                 language={match[1]}
                 PreTag="div"
                 {...props}
-              />
+              >
+                {String(children).replace(/\n$/, "")}
+              </SyntaxHighlighter>
             ) : (
               <code
                 style={{
@@ -82,7 +86,7 @@ export default function Unix({ params }) {
         }}
       >
         {fs.readFileSync(
-          "src/documents/lessons/" + lessons[params.id - 1].path,
+          "src/documents/lessons/" + lessons[id - 1].path,
           "utf8"
         )}
       </ReactMarkdown>
