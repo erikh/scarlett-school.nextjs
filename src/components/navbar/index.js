@@ -54,7 +54,7 @@ export default function NavBar({ children }) {
               borderRadius: 0,
             }}
             component={Link}
-            href="#"
+            href="/about"
           >
             About
           </Button>
