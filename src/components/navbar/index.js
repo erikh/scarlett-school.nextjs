@@ -3,6 +3,10 @@ import { AppShell, AppShellHeader, AppShellMain, Button } from "@mantine/core";
 import Link from "next/link";
 import { useMantineTheme } from "@mantine/core";
 import Footer from "../footer";
+import { Open_Sans } from "next/font/google";
+const sans = Open_Sans({
+  subsets: ["latin"],
+});
 
 export default function NavBar({ children }) {
   const theme = useMantineTheme();
@@ -72,7 +76,12 @@ export default function NavBar({ children }) {
           </div>
         </AppShellHeader>
         <AppShellMain>
-          <div style={{ height: "100%" }}>{children}</div>
+          <div
+            className={`${sans.className} antialiased`}
+            style={{ height: "100%" }}
+          >
+            {children}
+          </div>
         </AppShellMain>
       </AppShell>
       <Footer />
