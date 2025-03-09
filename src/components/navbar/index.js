@@ -2,6 +2,7 @@
 import { AppShell, AppShellHeader, AppShellMain, Button } from "@mantine/core";
 import Link from "next/link";
 import { useMantineTheme } from "@mantine/core";
+import Footer from "../footer";
 
 export default function NavBar({ children }) {
   const theme = useMantineTheme();
@@ -72,7 +73,10 @@ export default function NavBar({ children }) {
           </Button>
         </div>
       </AppShellHeader>
-      <AppShellMain>{children}</AppShellMain>
+      <AppShellMain>
+        <div style={{ height: "100%" }}>{children}</div>
+        <Footer />
+      </AppShellMain>
     </AppShell>
   );
 }

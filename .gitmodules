@@ -1,0 +1,3 @@
+[submodule "src/documents"]
+	path = src/documents
+	url = https://github.com/erikh/scarlett-school
