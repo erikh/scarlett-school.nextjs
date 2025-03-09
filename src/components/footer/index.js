@@ -10,10 +10,10 @@ export default function Footer() {
         position: "fixed",
         bottom: 0,
         backgroundColor: theme.colors.gray[7],
-        color: theme.colors.gray[5],
+        color: theme.colors.dark[1],
       }}
     >
-      <center>&copy; 2023-2025 Erik Hollensbe. All Rights Reserved</center>
+      <center>&copy; 2023-2025 Erik Hollensbe. All Rights Reserved.</center>
     </div>
   );
 }
