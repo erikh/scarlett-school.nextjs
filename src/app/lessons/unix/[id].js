@@ -1,5 +1,5 @@
 import lessons from "./lessons.js";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 export default function Unix() {
   const router = useRouter();
