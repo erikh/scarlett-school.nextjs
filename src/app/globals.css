@@ -29,8 +29,17 @@ p {
   font-size: 1.2em;
 }
 
+.markdown li {
+  font-size: 1em;
+}
+
+ul {
+  padding: 1em;
+}
+
 li {
   list-style-type: "- ";
+  font-size: 1.2em;
 }
 
 h1 {

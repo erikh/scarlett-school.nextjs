@@ -10,7 +10,9 @@ export default function About() {
   );
   return (
     <Text size="lg">
-      <ReactMarkdown remarkPlugins={[[remarkGfm]]}>{contents}</ReactMarkdown>
+      <div className="markdown">
+        <ReactMarkdown remarkPlugins={[[remarkGfm]]}>{contents}</ReactMarkdown>
+      </div>
     </Text>
   );
 }

@@ -41,7 +41,7 @@ export default function NavBar({ children }) {
               borderRadius: 0,
             }}
             component={Link}
-            href="#"
+            href="/lessons"
           >
             Lessons
           </Button>
@@ -67,7 +67,7 @@ export default function NavBar({ children }) {
               borderRadius: 0,
             }}
             component={Link}
-            href="#"
+            href="/contact"
           >
             Contact
           </Button>
