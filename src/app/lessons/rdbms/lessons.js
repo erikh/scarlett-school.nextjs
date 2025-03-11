@@ -1,4 +1,4 @@
-export default [
+const lessons = [
   {
     name: "Introduction to Databases",
     path: "rdbms/1-intro.md",
@@ -32,3 +32,5 @@ export default [
     path: "rdbms/8-aggregate-functions.md",
   },
 ];
+
+export default lessons;

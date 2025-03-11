@@ -1,5 +1,5 @@
 // NOTE these must be in-line, I tried.
-export default [
+const lessons = [
   {
     name: "Filesystems",
     path: "unix/1-filesystems.md",
@@ -37,3 +37,5 @@ export default [
     path: "unix/9-scripting.md",
   },
 ];
+
+export default lessons;
