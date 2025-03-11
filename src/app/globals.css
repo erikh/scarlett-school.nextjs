@@ -23,13 +23,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.maintext p {
-  padding: 1em;
-  font-size: 1.2em;
+.maintext,
+p {
+  padding: 0.5em;
 }
 
-.markdown li {
-  font-size: 1em;
+.markdown li p {
+  padding: 0;
 }
 
 .header a,
@@ -46,21 +46,13 @@ a:visited {
 }
 
 ol {
-  list-style-type: ordered;
+  list-style-type: decimal;
   padding: 1em;
 }
 
 ul {
-  list-style-type: unordered;
+  list-style-type: disc;
   padding: 1em;
-}
-
-li {
-  font-size: 1.2em;
-}
-
-.markdown p {
-  font-size: 1em;
 }
 
 .markdown li {
@@ -79,12 +71,12 @@ h3 {
   font-size: 1.2em;
 }
 
-pre div {
+.markdown pre div {
   border: 1px solid black;
 }
 
-th,
-td {
+.markdown th,
+.markdown td {
   padding: 3px;
   border: 1px solid black;
 }
