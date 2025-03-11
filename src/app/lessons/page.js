@@ -18,9 +18,7 @@ export default function Lessons() {
         constraints, make it a day or two a week. The important thing is{" "}
         <b>effort</b> and <b>consistency</b>.
       </Text>
-      <Text size="xl" className="maintext">
-        Lesson Plans:
-      </Text>
+      <h2>Lesson Plans</h2>
       <Text size="lg" className="maintext">
         Each link leads to a series of lessons which should be read and digested
         in order. By way of your instructor, you should be able to ask
