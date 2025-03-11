@@ -47,12 +47,16 @@ a:visited {
 
 ol {
   list-style-type: decimal;
-  padding: 1em;
+  padding-left: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 ul {
   list-style-type: disc;
-  padding: 1em;
+  padding-left: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .markdown li {
