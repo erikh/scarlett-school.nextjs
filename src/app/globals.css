@@ -46,13 +46,17 @@ a:visited {
   color: #886666;
 }
 
-ol,
+ol {
+  list-style-type: ordered;
+  padding: 1em;
+}
+
 ul {
+  list-style-type: unordered;
   padding: 1em;
 }
 
 li {
-  list-style-type: "- ";
   font-size: 1.2em;
 }
 
