@@ -71,3 +71,9 @@ h2 {
 pre div {
   border: 1px solid black;
 }
+
+th,
+td {
+  padding: 3px;
+  border: 1px solid black;
+}
