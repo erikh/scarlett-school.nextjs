@@ -23,11 +23,14 @@ export default function Markdown({ children }) {
             ) : (
               <code
                 style={{
-                  paddingLeft: "0.25em",
-                  paddingRight: "0.25em",
-                  border: "1px solid #888",
-                  backgroundColor: "#966",
-                  color: "white",
+                  paddingLeft: "0.15em",
+                  paddingRight: "0.15em",
+                  paddingTop: "0.05em",
+                  paddingBottom: "0.05em",
+                  borderRadius: "0.3em",
+                  border: "1px solid #000",
+                  backgroundColor: "#fdf6e3",
+                  color: "#657b83",
                 }}
                 className={className}
                 {...props}
